@@ -1,0 +1,234 @@
+/* General style */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ffeef5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper for the entire application */
+.text-analyzer-wrapper {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffd6e0, #fff5f8);
+    box-shadow: 10px 10px 20px #e5a4b3, -10px -10px 20px #fff;
+}
+
+/* Heading */
+h2 {
+    background-color: #ff99cc;
+    color: white;
+    padding: 15px;
+    margin: -20px -20px 20px -20px;
+    font-size: 24px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Description for the input field */
+p {
+    font-size: 16px;
+    color: #b36b85;
+}
+
+/* Input field */
+textarea {
+    width: 90%;
+    height: 120px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: inset 5px 5px 10px #e5a4b3, inset -5px -5px 10px #fff;
+    outline: none;
+    resize: none;
+}
+
+/* Warning block */
+.warning-block {
+    color: #ff4d6d;
+    font-weight: bold;
+    border: 1px solid #ff4d6d;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    background-color: #ffccd5;
+    border-radius: 10px;
+    display: none;
+}
+
+/* Buttons */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Count button */
+.count-button {
+    background-color: #ffb6c1;
+    color: white;
+    box-shadow: 5px 5px 10px #e5a4b3, -5px -5px 10px #fff;
+}
+
+.count-button:hover {
+    background-color: #ff8fa3;
+}
+
+/* Clear button */
+.clear-button {
+    background-color: #ff99cc;
+    color: white;
+    box-shadow: 5px 5px 10px #e5a4b3, -5px -5px 10px #fff;
+}
+
+.clear-button:hover {
+    background-color: #ff6b9a;
+}
+
+/* Result */
+.result-block {
+    margin-top: 20px;
+    background-color: #ffc1e3;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #7a3a52;
+    box-shadow: 5px 5px 10px #e5a4b3, -5px -5px 10px #fff;
+}
+
+/* Timer with gradient and animation */
+.timer-block {
+    background: linear-gradient(145deg, #ffccdd, #ffe6f0);
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #7a3a52;
+    box-shadow: 5px 5px 10px #e5a4b3, -5px -5px 10px #fff;
+    font-size: 20px;
+    width: 200px;
+    margin: 20px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation for changing text in the timer */
+.timer-block span {
+    display: inline-block;
+    font-weight: bold;
+    color: #ff4d6d;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effect of increasing time */
+.timer-block span.grow {
+    transform: scale(1.2);
+}
+
+/* Styling for the history table */
+.history-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: linear-gradient(145deg, #ffd6e0, #fff5f8); /* Soft pink gradient */
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #e5a4b3, -5px -5px 15px #fff; /* Subtle shadow effect */
+    overflow: hidden;
+}
+
+/* Styling for the last queries title */
+.history-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7a3a52; /* Soft dark pink */
+    background: linear-gradient(145deg, #ffb6c1, #ffe6f0); /* Light pink gradient */
+    padding: 12px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #e5a4b3, -5px -5px 15px #fff;
+}
+
+/* Table header styling */
+.history-table thead {
+    background-color: #ff99cc; /* Soft pink background */
+    color: white;
+    font-weight: bold;
+}
+
+/* Column headers */
+.history-table th {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Table cell styling */
+.history-table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #7a3a52; /* Dark pink text */
+}
+
+/* Styling for table rows */
+.history-table tbody tr {
+    background-color: #fff; /* White background for rows */
+    transition: background 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Row hover effect */
+.history-table tbody tr:hover {
+    background-color: #ffe6f0; /* Light pink highlight on hover */
+}
+
+/* Rounded corners for the table */
+.history-table tbody tr:first-child td:first-child {
+    border-top-left-radius: 15px;
+}
+
+.history-table tbody tr:first-child td:last-child {
+    border-top-right-radius: 15px;
+}
+
+.history-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+.history-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+/* Container to position the Clear History button */
+.clear-history-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin: 10px 5% 20px 5%;
+}
+
+/* Styling for the "Clear History" button */
+.clear-history-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background-color: #ff99cc; /* Soft pink */
+    color: white;
+    box-shadow: 5px 5px 10px #e5a4b3, -5px -5px 10px #fff;
+}
+
+.clear-history-button:hover {
+    background-color: #ff6b9a; /* Darker pink on hover */
+}
